@@ -19,8 +19,12 @@ Description : A simple HTML file for form tag.
         <fieldset>
             <legend>Personal Information</legend>
             <!-- Add a label and input field for 'Name' here -->
+            <lable for="name">Name:</lable><br>
+            <input type="text" id="name" name="name"><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
+            <lable for="password">Password:</lable><br>
+            <input type="password" id="password" name="password"><br>
             <!-- Add a label and input field for 'Password' here, ensure to use the correct type for password fields -->
         </fieldset>
 
@@ -29,11 +33,24 @@ Description : A simple HTML file for form tag.
             <p>Gender:</p>
 			<input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">other</label><br>
             <!-- Create radio buttons for 'Female', and 'Other' gender options -->
 	
             <label for="fruits">Choose a fruit:</label><br>
-            <select id="fruits" name="fruits">
+            <select id="fruits" name="fruits" size="5">
 				<option value="apple">Apple</option>
+                <option value="banana">banana</option>
+                <option value="orange">orange</option>
+                <option value="grape">grape</option>
+                <option value="pineapple">pineapple</option>
+                <option value="peach">peach</option>
+                <option value="kiwi">kiwi</option>
+                <option value="tomato">tomato</option>
+                <option value="cherry">cherry</option>
+                <option value="lemon">lemon</option>
                 <!-- Add options for various fruits like Banana, Orange, etc. (At least 10 fruits) -->
             </select><br>
 			<!-- Add some attributes to select tag that changes it from a drop menu to a scrollable list.-->
@@ -41,20 +58,30 @@ Description : A simple HTML file for form tag.
 
         <fieldset>
             <legend>Other Elements</legend>
+            <lable for="birthday">Birthday:</lable><br>
+            <input type="datetime" id="birthday" name="birthday"><br>
             <!-- Add a label and input field for 'Birthday' here, use the appropriate type for date selection -->
             <label for="favcolor">Favorite Color:</label><br>
             <input type="color" id="favcolor" name="favcolor"><br>
+            <lable for="quantity">quantity:</lable><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
             <!-- Add a label and number input field for 'Quantity', set min to 1 and max to 5 -->
             <label for="range">Range (between 1 and 10):</label><br>
             <input type="range" id="range" name="range" min="1" max="10"><br>
 			<!-- Add an attribute to the range input to set its initial value to 2-->
             <!-- Add a label and input field for 'Homepage', use the correct type for URLs -->
+            <lable for="homepage">Homepage:</lable><br>
+            <input type="url" id="homepage" name="homepage"><br>
             <label for="feedback">Feedback:</label><br>
-			<textarea id="feedback" name="feedback"></textarea><br>
+			<textarea id="feedback" name="feedback" rows="20" cols="100"></textarea><br>
             <!-- Add some attributes to the feedback textarea tag to make it bigger and suitable for editing texts-->
             <!-- Add a file input field -->
+            <input type="file" id="file" name="file"><br>
             <!-- Add a checkbox for 'Subscribe to newsletter' -->
+            <input type="checkbox" id="Subscribe" name="Subscribe">
+            <lable for="Subscribe">Subscribe to newsletter</lable><br>
             <!-- Add a hidden field for 'customerId', set its value to '12345' -->
+            <input type="hidden" id="customerId" name="customerId" value="12345">
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </fieldset>
